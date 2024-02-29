@@ -1,0 +1,131 @@
+body {
+    background-color: var(--bg-color);
+
+    font-family: 'Jetbrains Mono', monospace;
+
+    color: var(--text-color);
+
+    margin: 0;
+    font-weight: 500;
+
+    
+}
+
+/*
+Navbar - on hover, each links border goes inward
+*/
+
+.navbar {
+    background-color: var(--bg-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-weight: 600;
+}
+
+.navbar a {
+    margin: 0.5rem;
+    box-sizing: border-box;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 1rem 1.25rem;
+    display: inline-block;
+
+    font-size: 1.25rem;
+}
+
+.navbar span {
+    display: inline-block;
+}
+
+.navbar a:hover {
+    color: #5e5e5e;
+}
+
+.navbar a.focus {
+    color: #5e5e5e;
+
+    pointer-events: none;
+}
+
+a.social {
+    font-size: 2rem;
+
+    border: none;
+
+    padding: 0;
+}
+
+a.tilde {
+    font-weight: 900;
+}
+
+a.social:hover {
+    box-shadow: none;
+
+    color: #5e5e5e;
+}
+
+.content {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.stuff {
+    padding-top: 5vh;
+}
+
+hr {
+    height: 0.1rem;
+    background-image: linear-gradient(to right, var(--bg-color), var(--text-color), var(--bg-color));
+    width: 75%;
+
+    border: linear-gradient(to right, var(--bg-color), var(--text-color), var(--bg-color));
+}
+
+ul li {
+    padding: 0.5rem;
+}
+
+.socials-bottom {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-bottom a {
+    display: inline-block;
+    margin: 0.5rem;
+
+    color: var(--text-color);
+
+    text-decoration: none;
+}
+
+footer {
+    padding-bottom: 5vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.light-mode {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+}
+
+.dark-mode {
+    --bg-color: #333;
+    --text-color: #f5f5f5;
+}
